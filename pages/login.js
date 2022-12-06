@@ -11,7 +11,7 @@ import styles from "../styles/Form.module.css";
 import {login_validate} from "../lib/validate";
 import { useRouter } from "next/router";
 
-function Login() {
+const useLogin= () => {
   const router = useRouter()
     const [show, setShow] = useState(false)
 
@@ -50,7 +50,7 @@ function Login() {
     async function handleGitHubSignIn() {
       signIn('github', {callbackUrl: "http://localhost:3000"})
     }
-    
+
   return (
     <Layout>
       <Head>
@@ -118,7 +118,7 @@ function Login() {
 
           {/* /Button  */}
           <p className="text-gray-400 text-center">
-            don't have an account yet ?{" "}
+            don &apos t have an account yet ?{" "}
             <Link href={"/register"} legacyBehavior>
               <a className="text-blue-400">Sign Up</a>
             </Link>
@@ -129,4 +129,4 @@ function Login() {
   );
 }
 
-export default Login;
+export default useLogin;

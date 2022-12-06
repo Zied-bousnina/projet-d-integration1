@@ -9,7 +9,7 @@ import { useFormik } from 'formik';
 
 import {c_chargeValidate} from '../../lib/validate'
 
-export default function posts(){
+const usePosts= () =>{
   const [data, setData] = useState([])
   const [isLoading, setLoading] = useState(false)
   const session =useSession()
@@ -213,7 +213,7 @@ const handleshow= e=>{
 <select {...formik.getFieldProps('id_prof')} id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
  {
   prof && prof.map(e=>(
-    <option value={e.email}> {e.name} </option>
+    <option key={e._id} value={e.email}> {e.name} </option>
 
   ))
  }
@@ -255,3 +255,4 @@ const handleshow= e=>{
   )
 }
 
+export default usePosts;

@@ -8,7 +8,7 @@ import { useFormik } from 'formik';
 import {useRouter} from 'next/router'
 
 import {register_validate} from '../lib/validate'
-function register() {
+const useRegister= () => {
   const router = useRouter()
 
 
@@ -177,4 +177,4 @@ function register() {
   )
 }
 
-export default register
+export default useRegister

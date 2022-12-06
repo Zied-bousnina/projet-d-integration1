@@ -57,11 +57,11 @@ const ConsultDemandePFE = () => {
 
             </tr>
           </thead>
-          <tbody>
+          <tbody key={1}>
           {
             data && data.map((e,i)=>(
 
-            <tr class="bg-gray-100 border-b">
+            <tr key={i} class="bg-gray-100 border-b">
               <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900"> {i+1}</td>
               <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
                 {e.parcour}
