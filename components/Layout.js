@@ -3,9 +3,9 @@ import React, { useEffect, useState } from "react";
 import { useQuery } from "react-query";
 // import { getUsers } from "../database/controller";
 import { getUsers } from "../lib/helper";
-import IsLoadingSideBar from "./IsLoadingSideBar";
+// import IsLoadingSideBar from "./IsLoadingSideBar";
 import SideBar from "./Sidebar";
-import Sidebar from "./Sidebar";
+// import Sidebar from "./Sidebar";
 import SideBarAdmin from "./SideBarAdmin";
 import SideBarProf from "./SideBarProf";
 
@@ -14,7 +14,7 @@ import SideBarProf from "./SideBarProf";
 
 export default function Layout ({ children }) {
 
-  const [data1, setData1] = useState([])
+  // const [data1, setData1] = useState([])
   // const [isLoading, setLoading] = useState(false)
   const session =useSession()
 

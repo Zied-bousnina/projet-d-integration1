@@ -72,7 +72,7 @@ const useLogin= () => {
               className={`${styles.input_text} ${formik.errors.email && formik.touched.email ? 'border-rose-600': ''}`}
               type="email"
               name="email"
-              id=""
+              id="email"
               placeholder="Email"
               {...formik.getFieldProps('email')}
             />
@@ -87,7 +87,7 @@ const useLogin= () => {
               className={`${styles.input_text} ${formik.errors.password && formik.touched.password? 'border-rose-600':''}`}
 
               name="password"
-              id=""
+              id="password"
               placeholder="Password"
               {...formik.getFieldProps('password')}
 
@@ -112,7 +112,7 @@ const useLogin= () => {
               Sign in with Google
             </button>
           </div>
-          <div className="input-button">
+          <div className="input-button" >
             <button onClick={handleGitHubSignIn} type="button" className={styles.button_costum}>Sign in with Github</button>
           </div>
 

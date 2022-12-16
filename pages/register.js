@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import React, { useState } from 'react'
 import Layout from '../layout/Layout'
-import styles from '../styles/form.module.css'
+// import styles from '../styles/form.module.css'
 import {HiAtSymbol, HiFingerPrint, HiOutlineUser, HiIdentification} from 'react-icons/hi'
 import Link from 'next/link'
 import { useFormik } from 'formik';
