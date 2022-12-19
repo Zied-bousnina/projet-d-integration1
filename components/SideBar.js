@@ -25,25 +25,7 @@ export default function SideBar({user =[], prof=[]}){
   const [toggleCollapse, setToggleCollapse] = useState(false);
   const [isCollapsible, setIsCollapsible] = useState(false);
 
-  async function onSubmit() {
-    const options = {
-      method: 'POST',
-      headers: {'Content-Type': 'application/json'},
-      body: JSON.stringify(user)
-    }
 
-    await fetch('http://localhost:3000/api/auth/signup', options)
-      .then(res=> res.json())
-      .then((data)=>{
-        // alert("Account created")
-        // console.log('heyyyyyyyyyyyyyyyyyyyyyy')
-        // if(data) router.push('/login')
-      })
-  }
-
-  useEffect(() => {
-    onSubmit()
-  }, [])
   // console.log("use effect")
 
 

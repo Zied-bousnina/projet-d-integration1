@@ -58,9 +58,9 @@ const useRegister= () => {
 
         <form className="flex flex-col gap-5 " onSubmit={formik.handleSubmit}>
 
-        <div className={styles.input_group}>
+        <div >
             <input
-               className={`${styles.input_text} ${formik.errors.userName && formik.touched.userName? 'border-rose-600':''}`}
+               className={` ${formik.errors.userName && formik.touched.userName? 'border-rose-600':''}`}
               type="text"
               name="userName"
               id=""
@@ -73,9 +73,9 @@ const useRegister= () => {
           </div>
           {/* {formik.errors.userName && formik.touched.userName ? <span className="text-rose-400 text-sm">{formik.errors.userName}</span> : <></>} */}
 
-          <div className={styles.input_group}>
+          <div >
             <input
-               className={`${styles.input_text} ${formik.errors.email && formik.touched.email? 'border-rose-600':''}`}
+               className={`} ${formik.errors.email && formik.touched.email? 'border-rose-600':''}`}
               type="email"
               name="email"
               id=""
@@ -89,9 +89,9 @@ const useRegister= () => {
           </div>
           {/* {formik.errors.email && formik.touched.email ? <span className="text-rose-400">{formik.errors.email}</span> : <></>} */}
 
-          <div className={styles.input_group}>
+          <div >
             <input type='number'
-               className={`${styles.input_text} ${formik.errors.cin && formik.touched.cin? 'border-rose-600':''}`}
+               className={` ${formik.errors.cin && formik.touched.cin? 'border-rose-600':''}`}
 
               name="cin"
               id=""
@@ -110,9 +110,9 @@ const useRegister= () => {
           {/* {formik.errors.cin && formik.touched.cin ? <span className="text-rose-400">{formik.errors.cin}</span> : <></>} */}
 
 
-          <div className={styles.input_group}>
+          <div >
             <input type={`${show.password ? "text": "password"}`}
-               className={`${styles.input_text} ${formik.errors.password && formik.touched.password? 'border-rose-600':''}`}
+               className={` ${formik.errors.password && formik.touched.password? 'border-rose-600':''}`}
 
               name="password"
               id=""
@@ -128,9 +128,9 @@ const useRegister= () => {
           </div>
           {formik.errors.password && formik.touched.password ? <span className="text-rose-400">{formik.errors.password}</span> : <></>}
 
-          <div className={styles.input_group}>
+          <div >
             <input type={`${show.cpass ? "text": "password"}`}
-               className={`${styles.input_text} ${formik.errors.cpassword && formik.touched.cpassword? 'border-rose-600':''}`}
+               className={` ${formik.errors.cpassword && formik.touched.cpassword? 'border-rose-600':''}`}
 
               name="cpassword"
               id=""
@@ -151,7 +151,7 @@ const useRegister= () => {
 
           {/* Login button  */}
           <div className="input-button">
-            <button type="submit" className={styles.button}>
+            <button type="submit" >
             Sign Up
             </button>
           </div>
