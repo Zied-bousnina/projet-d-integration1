@@ -1,0 +1,15 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+.dropdownmenu {
+    background: #fff;
+    padding: 5px;
+
+}
+
+.dropdownmenu>div {
+    margin: 10px 0px;
+    padding: 0px 0px 0px 3px;
+    color: #4b587c;
+}

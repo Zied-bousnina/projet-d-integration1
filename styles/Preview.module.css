@@ -1,0 +1,86 @@
+.previewcontainer {
+    /* background: lawngreen; */
+    margin: 0 auto;
+    width: 100%;
+    max-width: 70%;
+}
+
+.preview {
+    /* color: yellow; */
+    cursor: pointer;
+}
+
+
+.top_summary {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.contacts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+.mobile,
+.email,
+.address {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+}
+
+.full_nameandrole {
+    margin-bottom: 5px;
+}
+
+.fullname {
+    margin-bottom: 5px;
+}
+
+
+.skills_section {
+    margin-top: 30px;
+}
+
+
+.skills_items {
+    margin-top: 10px;
+}
+
+
+.title {
+    color: #E12E0D;
+}
+
+
+
+
+
+
+.date {
+    color: #666666;
+    font-family: 9pt;
+}
+
+.sub_title {
+    color: #000000;
+    font-weight: 700;
+    font-size: 11pt;
+    line-height: 1.0;
+}
+
+.inner_sub_title {
+    color: #000000;
+    font-weight: 400;
+    text-decoration: none;
+    vertical-align: baseline;
+    font-size: 11pt;
+    font-family: "Playfair Display";
+    font-style: italic;
+}
